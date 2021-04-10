@@ -1,0 +1,23 @@
+[
+    {
+      "name": "Pencils",
+      "value": 4500,
+      "rating": 1200
+    },
+    {
+      "name": "Boxes",
+      "value": 1000,
+      "rating": 900
+    },
+    {
+      "name": "Books",
+      "value": 4000,
+      "rating": 1100
+    },
+    {
+      "name": "Paint Colors",
+      "value": 2780,
+      "rating": 800
+    }
+  ]
+  
