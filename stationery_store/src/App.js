@@ -9,6 +9,7 @@ import DemandsData from './components/Data/ProductDemandsData.json';
 import SoldData from './components/Data/UserPurchesData.json';
 
 import { BrowserRouter, Switch, Route} from 'react-router-dom';
+import {CssBaseline} from '@material-ui/core';
 
 import { commerce } from './lib/commerce';
 import ProductDetails from './components/ProductDetails/ProductDetails';
@@ -16,6 +17,7 @@ import ProductDetails from './components/ProductDetails/ProductDetails';
 
 
 const App = () => {
+    const [mobileOpen,setMobileOpen] = React.useState(null);
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState({});
     const [items, setItems] = useState({}); 
@@ -65,10 +67,13 @@ const App = () => {
         fetchCart();
     }, []);
 
+    const handleDrawerToogle = () => setMobileOpen(!mobileOpen);
+
     return (
         <BrowserRouter>
             <React.Fragment>
-                <Navbar totalItems={cart.total_items}/>
+                <CssBaseline/>
+                <Navbar totalItems={cart.total_items} handleDrawerToogle={handleDrawerToogle}/>
                 <Switch>
                     <Route exact path="/">
                         <Home />
