@@ -6,21 +6,20 @@ export default makeStyles((theme) => ({
         minHeight: '10vh',
         display: 'flex',
         justifyContent:'center',
-        backgroundImage: `url(${'https://wallpaperaccess.com/full/1826243.jpg'})`,
     },
     
     subcard:{
-        backgroundColor: 'rgb(255,255,255,0.8)',
+        backgroundColor: 'rgb(0,0,0,0.5)',
         display: 'flex',
         justifyContent:'center',
-        margin: '2px',
+        margin: '10px',
         width: '100%',
+        color: '#fff',
         alignItems: 'center',
     },
 
     details:{
-        color:'#fff',
-        backgroundColor: 'rgb(0,0,0,0.5)',
+        color:'#000',
     },
 
 }));

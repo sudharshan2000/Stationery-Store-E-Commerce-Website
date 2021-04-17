@@ -25,7 +25,7 @@ const Navbar = ({totalItems}) =>{
     const mobileMenuId = 'primary-search-account-menu-mobile';
 
     const renderMobileMenu = (
-        <Menu className = {classes.menuButton} anchorEl={mobileMoreAnchorEl} anchorOrigi={{vertical : 'top', horizontal:'right'}} id={mobileMenuId} keepMounted transformOrigin={{vertical : 'top', horizontal:'right'}} open={isMobileMenuOpen} onClose={handleMobileMenuClose}>
+        <Menu className = {classes.menuButton} anchorEl={mobileMoreAnchorEl} anchorOrigin={{vertical : 'top', horizontal:'right'}} id={mobileMenuId} keepMounted transformOrigin={{vertical : 'top', horizontal:'right'}} open={isMobileMenuOpen} onClose={handleMobileMenuClose}>
             
             <MenuItem component = {Link} to ="/home">
                 <IconButton aria-label="Home" color="inherit">

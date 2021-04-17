@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Card, CardContent, Typography, CardActions, Button} from '@material-ui/core';
+import { Card, CardContent, Typography, CardActions, Button, Grid} from '@material-ui/core';
 import BarCharts from '../../Charts/Bargraph/BarCharts';
 
 import useStyles from './styles';
@@ -13,6 +13,7 @@ const UserPurchase = ({data}) =>{
  return(
     <React.Fragment>
         <Card className={classes.root} variant="outlined">
+        <Grid container direction="row" justify="center" alignItems="center" item xs={12} sm={12} md={12} lg={12}>
             <Card variant="outlined" className={classes.subcard}>
                <CardContent>
                   <Typography variant="h5" align="center">Product Purchase Analytics</Typography>
@@ -30,9 +31,10 @@ const UserPurchase = ({data}) =>{
 
                </CardContent>
             </Card>
-            <Card variant="outlined" className={classes.subcard}>
+            </Grid>
+            <Grid item xs={12} sm={12} md={12} lg={12}>
                <BarCharts barData={barData}/>
-            </Card>
+            </Grid>
          </Card>
     </React.Fragment>
  );

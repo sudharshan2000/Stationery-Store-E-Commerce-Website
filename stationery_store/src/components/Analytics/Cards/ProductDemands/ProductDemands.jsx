@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Card, CardContent, Typography, Button, CardActions} from '@material-ui/core';
+import { Card, CardContent, Typography, Button, CardActions, Grid} from '@material-ui/core';
 
 import useStyles from './styles';
 import LineCharts from '../../Charts/Line/LineChart';
@@ -12,7 +12,10 @@ const ProductDemands = ({data}) => {
 
    return (
       <React.Fragment>
+         {/* <Grid container direction="row" justify="center" alignItems="center"> */}
          <Card className={classes.root} variant="outlined">
+         {/* <Grid> */}
+         <Grid container direction="row" justify="center" alignItems="center" item xs={12} sm={12} md={12} lg={12}>
             <Card variant="outlined" className={classes.subcard}>
                <CardContent>
                   <Typography variant="h5" align="center">Product Demands Analytics</Typography>
@@ -28,9 +31,12 @@ const ProductDemands = ({data}) => {
                   </Card>
                </CardContent>
             </Card>
-            <Card variant="outlined" className={classes.subcard}>
-               <LineCharts lineData={lineData}/>
-            </Card>
+            </Grid>
+            
+            <Grid item xs={12} sm={12} md={12} lg={12}>
+            <LineCharts lineData={lineData}/>
+            </Grid>
+            
          </Card>
       </React.Fragment>
    );

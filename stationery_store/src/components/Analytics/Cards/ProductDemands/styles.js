@@ -5,22 +5,22 @@ export default makeStyles((theme) => ({
         minHeight: '10vh',
         display: 'flex',
         justifyContent:'center',
-        backgroundImage: `url(${'https://cdn.hipwallpaper.com/i/62/13/7HjT0g.jpg'})`,
+        // backgroundImage: `url(${'https://cdn.hipwallpaper.com/i/62/13/7HjT0g.jpg'})`,
     },
     
     subcard:{
-        backgroundColor: 'rgb(255,255,255,0.8)',
         display: 'flex',
         justifyContent:'center',
-        margin: '20px',
+        margin: '10px',
+        color: '#fff',
         width: '100%',
+        backgroundColor: 'rgb(0,0,0,0.5)',
         fontWeight: '50px',
         alignItems: 'center',
     },
 
     details:{
-        color:'#fff',
-        backgroundColor: 'rgb(0,0,0,0.5)',
+        color:'#000',
     },
 
     button:{
